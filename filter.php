@@ -13,13 +13,13 @@
         <?php
 		//Variables settings
 		// IP adress
-        $host = '127.0.0.1';
+        $host = 'localhost';
 		// Database name
         $dbname = 'medifind';
 		// User ID
-        $id = 'root';
+        $id = 'medifind';
 		// Password
-        $pass = '';
+        $pass = 'password!';
         mb_internal_encoding('UTF-8');
         try
         {
@@ -28,6 +28,7 @@
         }
         catch (Exception $ep)
         {
+            var_dump($ep );
             echo "Error database";
         }
 			// Request treatment
